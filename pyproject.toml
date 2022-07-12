@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "simon_lance"
+packages = [
+    { include = "simon_lance", from = "lib" },
+]
+version = "0.1.0"
+description = "Personal website"
+authors = ["Simon Lance"]
+
+[tools.poetry.dependencies]
+
+[tools.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
