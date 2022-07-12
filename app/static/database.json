@@ -1,0 +1,20 @@
+{
+    "users": {
+        "freddy": {
+            "tag": "freddy",
+            "password": "orange"
+        },
+        "mikkel": {
+            "tag": "mikkel",
+            "password": "blue"
+        },
+        "tim": {
+            "tag": "tim",
+            "password": "green"
+        },
+        "anhad": {
+            "tag": "anhad",
+            "password": "red"
+        }
+    }
+}
