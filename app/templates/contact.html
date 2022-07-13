@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block head %}
+{{ super() }}
+
+{% endblock %}
+
+{% block page_content %}
+{% include 'include/sidebar.html' %}
+<h1>
+    Contact details
+</h1>
+
+{{data.name}}<br>
+{{data.email}}<br>
+<a class="action" href="{{data.github}}"/a>
+
+{{data.github}}
+
+{% endblock %}
+
+{% block scripts %}
+{{ super() }}
+
+
+{% endblock %}

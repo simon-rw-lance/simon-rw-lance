@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block head %}
+{{ super() }}
+
+{% endblock %}
+
+{% block page_content %}
+{% include 'include/sidebar.html' %}
+<h1>
+    Homepage
+</h1>
+
+<p> 
+    Welcome to my personal website! My names Simon Lance and I'm a 27 year old final year PhD student in Astrophysics at the University of Exeter with an interest in web development. 
+    <br>
+    <br>
+    Please note that this websites primary use is as a playground for me to practice full stack development and so should be viewed as being perpetually "under construction". I apologise
+    in advance for any bugs/issues you may encounter while here!
+    <br>
+    <br>
+    All that being said, please feel free to explore!
+</p>
+
+
+{% endblock %}
+
+{% block scripts %}
+{{ super() }}
+
+
+{% endblock %}

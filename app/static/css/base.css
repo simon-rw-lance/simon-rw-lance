@@ -1,0 +1,48 @@
+body {
+    background-image: url('../images/background.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Exo 2', sans-serif;
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    
+}
+
+main{
+  display: flex;
+  flex-direction: row;
+}
+
+h1, p{
+  text-align: center;
+}
+
+.box{
+  display: flex;
+  flex-direction: column;
+  background-color:#ffffff;
+  color: #00334e;
+  padding: 2em;
+  margin: 2em;
+  border-radius: 10px;
+  justify-content: center;
+}
+
+.button{
+  background-color: #00334e;
+  border-radius:10px;
+  padding: 1em;
+  color:white;
+  font-weight: bold;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
