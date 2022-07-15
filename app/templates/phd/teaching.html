@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block head %}
+{{ super() }}
+
+{% endblock %}
+
+{% block page_content %}
+{% include 'include/sidebar.html' %}
+<h1>PhD</h1>
+<h2>Teaching experience</h2>
+<body>
+    <p>
+        Below is a list of the following modules provided at the University of Exeter that I have provided 
+        demonstrating / tutorials for.
+    </p>
+    <ul>
+        <li>PHY1023 - Mathematical Skills</li>
+        <li>PHY1024 - Mathematics for Physicists</li>
+        <li>NSC1002 - Integrative Tools for Natural Sciences</li>
+        <li>NSC1003 - Foundations in Natural Sciences (Physics)</li>
+        <li>NSC1004 - Experimental Science (Physics)</li>
+        <li>PHY2023 - Thermal Physics</li>
+        <li>PHY2035 - Scientific Programming in Python</li>
+    </ul>
+</body>
+
+
+{% endblock %}
+
+{% block scripts %}
+{{ super() }}
+
+
+{% endblock %}

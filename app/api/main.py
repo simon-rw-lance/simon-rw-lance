@@ -37,10 +37,10 @@ async def contact(request: Request):
 async def phd(request : Request, page_name: str):
     if page_name == "about":
         return templates.TemplateResponse("phd/about.html", {"request": request})
-    elif page_name == "convection":
-        return templates.TemplateResponse("phd/convection.html", {"request": request})
-    elif page_name == "planets":
-        return templates.TemplateResponse("phd/planets.html", {"request": request})
+    elif page_name == "CoolStars21":
+        return templates.TemplateResponse("phd/CoolStars21.html", {"request": request})
+    elif page_name == "teaching":
+        return templates.TemplateResponse("phd/teaching.html", {"request": request})
 
 from app.api.routers import wow_tools
 app.include_router(wow_tools.router)

@@ -1,5 +1,5 @@
 body {
-    background-image: url('../images/background.svg');
+    background-image: url('../images/background2.svg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -23,7 +23,7 @@ h1, p{
   display: flex;
   flex-direction: column;
   background-color:#ffffff;
-  color: #00334e;
+  color: #88c3ff;
   padding: 2em;
   margin: 2em;
   border-radius: 10px;
@@ -31,7 +31,7 @@ h1, p{
 }
 
 .button{
-  background-color: #00334e;
+  background-color: #88c3ff;
   border-radius:10px;
   padding: 1em;
   color:white;

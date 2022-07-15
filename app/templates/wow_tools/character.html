@@ -8,35 +8,46 @@
 {% block page_content %}
 {% include 'include/sidebar.html' %}
 <h1>
-    {% if data.character is not none %}
-      {{data.character}}
-    {% else %}
-      Enter your character details
-    {% endif %}
+  WoW Tools
 </h1>
 
 <body>
+
+  <p>
+    This is a tool used for obtaining ranked information from the video game World of Warcraft. In the game
+    you can complete content known as "keys" which depending on the difficulty level and the speed of completion
+    rewards you with an ammount of "score". <br><br>
+    This tool allows you to enter your characters information (Name | Realm | Region) which will then send off an
+    API request to the game servers. It will then return said information to our web server. <br><br>
+    Currently this page will display to you your characters total score, along with the best key you have currently 
+    completed however there is a wealth of other additional information available to us that is simply not displayed.
+  </p>
+  <br>
+  <p>
+    Don't have a character yourself? Try one of these: <br>
+    Thuridain | The Sha'tar | EU <br>
+    Xormar | The Sha'tar | EU <br>
+    Miema | Steamwheedle Cartel | EU <br>
+    Grengan | The Sha'tar | EU <br>
+    <br>
+  </p>
+
   <form method="post">
     <input type="text" name="character" value="Character"/>
     <input type="text" name="realm" value="Realm"/>
     <input type="text" name="region" value="Region"/>
     <input type="submit">
   </form>
-  <p>
-    <br>
-    Don't have a character yourself? Try one of these: <br>
-    Thuridain | The Sha'tar | EU <br>
-    Xormar | The Sha'tar | EU <br>
-    Miema | Steamwheedle Cartel | EU <br>
-  </p>
-
 
   <p>
     <br>
     Character: {{ data.character }} <br>
     Realm: {{ data.realm }} <br>
-    Region: {{ data.region }}
+    Region: {{ data.region }} <br>
+    Score: {{data.score}} <br>
+    Best Key: {{data.best_key}} {{data.best_key_level}}
   </p>
+
 </body>
 
 {% endblock %}

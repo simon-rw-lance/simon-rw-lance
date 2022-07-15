@@ -5,7 +5,7 @@
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 body {
     font-family: 'Poppins', sans-serif;
-    background-image: url('../images/background.svg');
+    background-image: url('../images/background2.svg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -16,13 +16,19 @@ p {
     font-size: 1.1em;
     font-weight: 300;
     line-height: 1.7em;
-    color: #999;
+    color: white;
 }
+
+h1,h2,h3,ul {
+    color: white;
+}
+
+
 
 a,
 a:hover,
 a:focus {
-    color: inherit;
+    color: white;
     text-decoration: none;
     transition: all 0.3s;
 }
