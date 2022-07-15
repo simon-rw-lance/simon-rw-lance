@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block head %}
+{{ super() }}
+
+{% endblock %}
+
+{% block page_content %}
+{% include 'include/sidebar.html' %}
+<h1>PhD</h1>
+<body>
+    <h2>CoolStars21 Poster</h2>
+    <iframe src="../../static/pdf/coolstars21.pdf"
+        width="1000"
+        height="1450">
+    </iframe>
+</body>
+
+{% endblock %}
+
+{% block scripts %}
+{{ super() }}
+
+
+{% endblock %}

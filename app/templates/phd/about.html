@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block head %}
+{{ super() }}
+
+{% endblock %}
+
+{% block page_content %}
+{% include 'include/sidebar.html' %}
+<h1>PhD</h1>
+<body>
+  <h2>About</h2>
+  <p>
+  Beginning at the University of Exeter in September 2018, my PhD was aimed towards investivating the coupling between
+  the convective interiors and radiative atmospheres found in stars and planets.
+  </p>
+  <br>
+  <h3>Convection & viscous dissipation</h3>
+  <p>
+  Convection is everywhere in stars. More massive stars (greater than 1.3 solar masses) have thick convective envelopes that enclose 
+  radiatively dominated cores whereas lower mass stars have instead large convective cores which dominate the bulk of the interior. 
+  No matter where you lie on the stellar main sequence, convection is present. It then follows that if we wish to understand how these
+  stars evolve, it is crucial that we understand the convection that occcurs inside them. 
+  <br><br>
+  In a steady state convective flows that have been established must be sustained against any dissipation present. This dissipation 
+  is something that is regularly ommited and ignored in more simple parametisations of convection in stellar evolution codes (see Mixing
+  Length Theory, or MLT). This has traditionally been done as for unstratified convection the magnititude of the dissipation is negligible.
+  As our ability as a community to model more complex, heavily stratified convection however it's becoming increasingly clear that such 
+  dissipation is indeed not negligible and in fact can be quite significant. 
+  </p>
+  <br>
+  <h3>Plantary atmospheres & the parameterisation of convection</h2>
+  <p>
+  Simulations of gas giant atmospheres are in actual fact only a very small component of the total planetary mass. In fact,
+  depending on the planet itself this can be as little as 5% of the overall planets radius. The remaining 95% of the planet is
+  then treated as our "convective interior". This boundary between this convective interior and the bottom of our atmosphere is
+  our Radiative-Convective Boundary (RCB) and in the case of our atmospheric simulations, represents our bottom boundary.
+  <br><br>
+  Historically speaking this boundary has been typically neglected (for valid reasons) with most research and interest being
+  directed towards the upper atmosphere. As a result this RCB has been treated very crudely, specifically in how the heat
+  flux from the convective interior has been handled. The second portion of my PhD studies revolves around this, developing more
+  complex and realistic RCB conditions and then comparing them to the more traditional models.
+  </p>
+</body>
+{% endblock %}
+
+{% block scripts %}
+{{ super() }}
+
+
+{% endblock %}
